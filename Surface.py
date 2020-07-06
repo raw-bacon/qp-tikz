@@ -29,7 +29,7 @@ class Surface:
         for k in range(self.number_of_strands):
             x = k * (self.width_of_disks + self.distance_of_disks)
             y = 0
-            tikz += "\\draw[rounded corners] (" + str(x) + "," + str(y) + ") -- \n"
+            tikz += "\\draw[rounded corners, fill=black!10] (" + str(x) + "," + str(y) + ") -- \n"
             x += self.width_of_disks
             tikz += "\t\t(" + str(x) + ", " + str(y) + ") -- \n"
             y += len(self.transpositions) * (self.distance_of_bands + self.width_of_bands) + 2*self.buffer
