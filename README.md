@@ -23,5 +23,5 @@ You should now have a pdf containing just a figure, which you can import into yo
 Entering `1,5/2,4/1,6/3,4/3,4/1,3/1,6/2,6` will produce the following figure.
 
 <p align="center">
-  <img src="example.png" width=50%>
+  <img src="example.png" width=40%>
 </p>
