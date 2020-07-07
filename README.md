@@ -1,13 +1,3 @@
-<style>
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-</style>
-
-
 # Description
 This program takes as an input a quasipositive braid and generates a .tex file
 which, when compiled by the user, gives a visualisation of its positive braid surface.
@@ -32,4 +22,6 @@ You should now have a pdf containing just a figure, which you can import into yo
 # Example Output
 Entering `1,5/2,4/1,6/3,4/3,4/1,3/1,6/2,6` will produce the following figure.
 
-<img src="example.png" class="center">
+<p align="center">
+  <img src="example.png" width=50%>
+</p>
