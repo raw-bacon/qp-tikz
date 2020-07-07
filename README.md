@@ -12,7 +12,7 @@ python if necessary.
 2. Similarly, make sure you have git installed.
 3. Clone this repository by typing
 `git clone https://github.com/raw-bacon/qp-tikz`. This will create
-a folder called `qp-tikz` in your working directory.
+a folder called `qp-tikz` in your current directory.
 4. Go into the newly created folder by typing `cd qp-tikz`.
 5. Run the program by typing `python qp.py`.
 6. Follow the prompts.
