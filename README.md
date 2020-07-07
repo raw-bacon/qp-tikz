@@ -1,3 +1,13 @@
+<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style>
+
+
 # Description
 This program takes as an input a quasipositive braid and generates a .tex file
 which, when compiled by the user, gives a visualisation of its positive braid surface.
