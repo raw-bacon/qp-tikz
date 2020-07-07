@@ -8,6 +8,7 @@ class Surface:
     distance_of_disks = 2
     distance_of_bands = 1
     buffer = 1
+    space = 0.5
 
 
     # instance variables
@@ -22,7 +23,13 @@ class Surface:
         self.transpositions = [(i-1, j-1) for (i, j) in transpositions]
 
     def to_tikz(self) -> str:
-        tikz = ""
+        # clipping
+        x_max = self.number_of_strands * (self.width_of_disks + self.distance_of_disks)
+        y_max = 2*self.buffer + len(self.transpositions) * (self.width_of_bands + self.distance_of_bands) - \
+                self.distance_of_bands + self.space
+
+        tikz = "\\clip (" + str(-self.space) + ", " + str(-self.space) + ") rectangle (" + \
+               str(x_max) + ", " + str(y_max) + ");\n\n"
 
         # the disks
         tikz += "% The disks\n"
@@ -33,11 +40,12 @@ class Surface:
             x += self.width_of_disks
             tikz += "\t\t(" + str(x) + ", " + str(y) + ") -- \n"
             y += len(self.transpositions) * (self.distance_of_bands + self.width_of_bands) + \
-                 2*self.buffer - self.distance_of_bands
+                 2 * self.buffer - self.distance_of_bands
             tikz += "\t\t(" + str(x) + ", " + str(y) + ") -- \n"
             x -= self.width_of_disks
             tikz += "\t\t(" + str(x) + ", " + str(y) + ") -- \n"
             tikz += "\t\tcycle;\n\n"
+
 
         # erasing stuff
         tikz += "% Erasing the lines below the future bands\n"
