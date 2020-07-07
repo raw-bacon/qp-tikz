@@ -132,4 +132,7 @@ class Surface:
 
             y += self.distance_of_bands + self.width_of_bands
 
+        tikz = "\\documentclass[tikz]{standalone}\n\n\\begin{document}\n\\begin{tikzpicture}\n" + tikz
+        tikz += "\\end{tikzpicture}\n\\end{document}"
+
         return tikz
