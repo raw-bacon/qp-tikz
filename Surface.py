@@ -101,8 +101,8 @@ class Surface:
             y += self.width_of_bands / 3
             tikz += "\t\t(" + str(x) + ", " + str(y) + ") .. \n"
 
-            tikz += "\t\tcontrols +(" + str(self.width_of_bands / 2) + ", 0) and +(" \
-                    + str(self.width_of_bands / 2) + ", 0) ..\n"
+            tikz += "\t\tcontrols +(" + str(self.width_of_bands / 1.7) + ", 0) and +(" \
+                    + str(self.width_of_bands / 1.7) + ", 0) ..\n"
             y -= self.width_of_bands
             tikz += "\t\t(" + str(x) + ", " + str(y) + ") -- \n"
             x = t[0] * (self.width_of_disks + self.distance_of_disks) + self.width_of_disks
@@ -133,8 +133,8 @@ class Surface:
             x = t[1] * (self.width_of_disks + self.distance_of_disks) + self.width_of_disks
             tikz += "\t\t(" + str(x) + ", " + str(y) + ") .. \n"
 
-            tikz += "\t\tcontrols +(" + str(self.width_of_bands / 2) + ", 0) and +(" \
-                    + str(self.width_of_bands / 2) + ", 0)\n"
+            tikz += "\t\tcontrols +(" + str(self.width_of_bands / 1.7) + ", 0) and +(" \
+                    + str(self.width_of_bands / 1.7) + ", 0)\n"
             y += self.width_of_bands
             tikz += "\t\t.. (" + str(x) + ", " + str(y) + ");\n"
 
