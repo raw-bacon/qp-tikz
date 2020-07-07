@@ -6,8 +6,8 @@ which, when compiled by the user, gives a visualisation of its positive braid su
 0. Open a terminal and navigate to your desired
 working directory.
 1. Make sure you have python installed by 
-typing `python --version` inside a terminal. 
-Expect the output to be `Python 3.x.x`. Install
+typing `python --version` into the terminal. 
+Expect the output to be `Python 3.x.x`. Install or update
 python if necessary.
 2. Similarly, make sure you have git installed.
 3. Clone this repository by typing
