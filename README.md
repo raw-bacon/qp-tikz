@@ -16,3 +16,5 @@ a folder called `qp-tikz` in your current directory.
 4. Go into the newly created folder by typing `cd qp-tikz`.
 5. Run the program by typing `python qp.py`.
 6. Follow the prompts.
+7. After having the program save a .tex file, compile it using your favorite LaTeX compiler.
+You should now have a pdf containing just a figure, which you can import into your LaTeX document as you would any other figure.
