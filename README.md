@@ -20,7 +20,7 @@ a folder called `qp-tikz` in your current directory.
 You should now have a pdf containing just a figure, which you can import into your LaTeX document as you would any other figure.
 
 # Example Output
-Entering `1,5/2,4/1,6/3,4/3,4/1,3/1,6/2,6` will produce the following figure.
+Entering `1,5 / 2,4 / 1,6 / 3,4 / 3,4 / 1,3 / 1,6 / 2,6` will produce the following figure.
 
 <p align="center">
   <img src="example.png" width=40%>
